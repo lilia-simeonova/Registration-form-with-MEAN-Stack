@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+  <h1>First Express page.</h1>
+  <h2>Register user</h2>
+  <form action="/users" method="POST">
+  	<input type="text" placeholder="name" name="name"><br><br>
+  	<input type="number" placeholder="age" name="age"><br><br>
+  	<input type="email" placeholder="email" name="email"><br><br>
+  	<button type="submit">Submit</button>
+  </form>
+  <br>
+  <form action="/users" method="GET">
+  	<button type="submit">See result</button>
+  </form>
+</body>
+</html>

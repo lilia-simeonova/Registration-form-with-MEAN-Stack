@@ -1,0 +1,16 @@
+<h2>Click below to see list of all users:</h2>
+<table>
+	<tr *ngIf="persons">
+		<th>Name</th>
+		<th>Age</th>
+		<th>Email</th>
+		<th></th>
+	</tr>
+	<tr *ngFor="let person of persons">
+		<td>{{person.name}}</td>
+		<td>{{person.age}}</td>
+		<td>{{person.email}}</td>
+		<td><button (click)='delete(person)'>delete</button></td>
+	</tr>
+</table>
+<button (click)="data()" type="button">Users</button>
